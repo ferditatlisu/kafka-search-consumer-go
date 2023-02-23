@@ -1,0 +1,38 @@
+stage:
+  server:
+    port: ":8082"
+  searchKafka:
+    servers: "localhost:9092"
+    topic: "product.search.kafka.0"
+    group: "product.search.kafka.group.0"
+  earthKafka:
+    servers: "localhost:9092"
+  secureKafka:
+    servers: "secure-localhost:9092"
+    userName: "username"
+    password: "password"
+    rootCAPath: "resources/rootCA.pem"
+    intermediateCAPath: "resources/interCA.pem"
+  redis:
+    host: "localhost:6379"
+    password: "1111"
+    database: 13
+venus:
+  server:
+    port: ":8082"
+  searchKafka:
+    servers: "localhost:9092"
+    topic: "product.search.kafka.0"
+    group: "product.search.kafka.group.0"
+  earthKafka:
+    servers: "localhost:9092"
+  redis:
+    host: "localhost:6379"
+    password: "1111"
+    database: 14
+  secureKafka:
+    servers: "secure-localhost:9092"
+    userName: "username"
+    password: "password"
+    rootCAPath: "resources/rootCA.pem"
+    intermediateCAPath: "resources/interCA.pem"
